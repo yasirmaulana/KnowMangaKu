@@ -28,11 +28,11 @@ function buttonMulaiOP(){
 }
 
 var pertanyaanDBS = [
-                      ['Berasal dari negara mana, komik Dragon Ball Super', 'c'],
-                      ['Jurus Kamehameha, berasal dari nama?', 'a'],
-                      ['Siapakah mangaka dari manga Dragon Ball?', 'a'],
-                      ['Dimanakah Akira Toriyama dilahirkan?', 'c'],
-                      ['Tanggal berapa Akira Toriyama dilahirkan?', 'd'],
+                      ['1. Berasal dari negara mana, manga Dragon Ball Super?', 'c'],
+                      ['2. Jurus Kamehameha, berasal dari nama?', 'a'],
+                      ['3. Siapakah mangaka dari manga Dragon Ball?', 'a'],
+                      ['4. Dimanakah Akira Toriyama dilahirkan?', 'c'],
+                      ['5. Tanggal berapa Akira Toriyama dilahirkan?', 'd'],
                     ]
 var pilihanDBS = [
                   ['a.Korea', 'b.Indonesia', 'c.Jepang', 'd.Cina'],
@@ -42,6 +42,27 @@ var pilihanDBS = [
                   ['a.15', 'b.25', 'c.7', 'd.5']
                  ]
 // console.log(pilihanDBS)
+
+function getNama(){
+  var nama = document.getElementById('tampungNama').value
+  document.getElementById('nama').innerHTML = 'Nama : '+nama
+  document.getElementById('score').innerHTML = 'Score : '+0
+
+  var divInputNama = document.getElementById('inputNama')
+  if(divInputNama.style.display === "none") {
+    divInputNama.style.display = "block";
+  }
+  else{
+    divInputNama.style.display = "none";
+  }
+
+  // document.getElementById('pertanyaan').children[0].value = pertanyaanDBS[0][0]
+  var divPertanyaan = document.getElementById('pertanyaan').children[0]
+  var arrPertanyaan = document.createTextNode(pertanyaanDBS[0][0])
+  divPertanyaan.appendChild(arrPertanyaan)
+
+
+}
 
 
 // ONE PIECE =================================================================================

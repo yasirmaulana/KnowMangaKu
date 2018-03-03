@@ -23,28 +23,33 @@
 
   <div class="container-fluid bg-3 text-center">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12" id="inputNama">
         <p>
         <p>Sebelum memulai, silakan masukan nama kamu
-        <p><input type="text" id="nama"><button id="simpanNama">Submit</button></>
+        <p><input type="text" id="tampungNama"><button id="simpanNama" onclick="getNama()">Submit</button></>
       </div>
       <div class="col-sm-6">
-        <h3>NAMA : </h3><br>
+        <h3 id="nama"></h3><br>
       </div>
       <div class="col-sm-6">
-        <h3>SCORE : </h3><br>
+        <h3 id="score"></h3><br>
       </div>
-      <div class="col-sm-6">
-          <!-- <img src="gambar\op.png" style="width:72%" class="img-circle" alt="Cinque Terre"> -->
+      <div class="col-sm-12" id="pertanyaan">
+        <h3></h3>
       </div>
-      <div class="col-sm-6">
-          <!-- <img src="gambar\op.png" style="width:72%" class="img-circle" alt="Cinque Terre"> -->
+      <div class="col-sm-6" id="pilihan">
+        <form action="">
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="male"> Males<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+        </form>
       </div>
 
     </div>
   </div>
   </div>
 
-  <script src="kuis.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
