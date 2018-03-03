@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kuis - DBS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid bg-3 text-center">
+    <h3>Dragon Ball Super</h3><br>
+    <div class="row">
+      <div class="col-sm-12">
+          <img src="gambar\dbs.png" style="width:72%" class="img-circle" alt="Cinque Terre">
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Aturan Main</h1>
+      <ol>
+        <li>Jawab pertanyaan dengan pilihan a/b/c/d</li>
+        <li>Jawaban 'benar' akan mendapatkan 20 poin</li>
+        <li>Jawaban 'salah' akan dikurangi 10 poin</li>
+        <li>Jika score lebih dari atau sama dengan 70, maka bisa mengikuti kuis One Piece</li>
+      </ol>
+      <h3>Sudah siap??? </h3>
+      <button id="mulai">mulai</button>
+    </div>
+  </div>
+
+  <div id="score">
+  </div>
+
+  <div id="kuis">
+  </div>
+
+  <script src="kuis.js"></script>
+</body>
+</html>

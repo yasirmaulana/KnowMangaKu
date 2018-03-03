@@ -10,11 +10,11 @@ navigasi.children[0].children[1].children[0].addEventListener('click', function(
 // seleksi kuis dragon ball
 var flaglis = ''
 var gambarDB = document.getElementsByClassName('row')[0]
-gambarDB.children[0].addEventListener('click',
-function(){
-  alert('hahahah')
-}
-)
 
-function kontenAturan(){
+
+console.log(gambarDB.children[0].children[1])
+gambarDB.children[0].children[1].addEventListener("click",  openWin)
+
+function openWin() {
+    window.open("dbs.html","_blank"," scrollbars=yes, width=350, height=600");
 }
