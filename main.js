@@ -61,7 +61,35 @@ function getNama(){
   var arrPertanyaan = document.createTextNode(pertanyaanDBS[0][0])
   divPertanyaan.appendChild(arrPertanyaan)
 
+  var divPilihan = document.getElementById('pilihan')
+  var form = document.createElement('form')
 
+  var formAttrAction = document.createAttribute('action')
+  formAttrAction.value = "''"
+  form.setAttributeNode(formAttrAction)
+
+  var formAttrId = document.createAttribute('id')
+  formAttrId.value = 'formRadio'
+  form.setAttributeNode(formAttrId)
+
+  var input = document.createElement('input')
+  var inputAttrType = document.createAttribute('type')
+  inputAttrType.value = 'radio'
+  input.setAttributeNode(inputAttrType)
+
+  var inputAttrName = document.createAttribute('name')
+  inputAttrName.value = 'PilihanGanda'
+  input.setAttributeNode(inputAttrName)
+
+  var inputAttrValue = document.createAttribute('value')
+  inputAttrValue.value = 'a'
+  input.setAttributeNode(inputAttrValue)
+
+  var arrPilihanGanda = document.createTextNode(pilihanDBS[0][0])
+  input.appendChild(arrPilihanGanda)
+  form.appendChild(input)
+  divPilihan.appendChild(form)
+  console.log(divPilihan)
 }
 
 
