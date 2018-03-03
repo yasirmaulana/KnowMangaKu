@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Kuis - DBS</title>
+  <title>Kuis</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,28 +22,29 @@
 <body>
 
   <div class="container-fluid bg-3 text-center">
-    <h3>Dragon Ball Super</h3><br>
     <div class="row">
       <div class="col-sm-12">
-          <img src="gambar\dbs.png" style="width:72%" class="img-circle" alt="Cinque Terre">
+        <p>
+        <p>Sebelum memulai, silakan masukan nama kamu
+        <p><input type="text" id="nama"><button id="simpanNama">Submit</button></>
       </div>
+      <div class="col-sm-6">
+        <h3>NAMA : </h3><br>
+      </div>
+      <div class="col-sm-6">
+        <h3>SCORE : </h3><br>
+      </div>
+      <div class="col-sm-6">
+          <!-- <img src="gambar\op.png" style="width:72%" class="img-circle" alt="Cinque Terre"> -->
+      </div>
+      <div class="col-sm-6">
+          <!-- <img src="gambar\op.png" style="width:72%" class="img-circle" alt="Cinque Terre"> -->
+      </div>
+
     </div>
   </div>
-
-  <div class="jumbotron">
-    <div class="container">
-      <h1>Aturan Main</h1>
-      <ol>
-        <li>Jawab pertanyaan dengan pilihan a/b/c/d</li>
-        <li>Jawaban 'benar' akan mendapatkan 20 poin</li>
-        <li>Jawaban 'salah' akan dikurangi 10 poin</li>
-        <li>Jika score lebih dari atau sama dengan 70, maka bisa mengikuti kuis Level selanjutnya</li>
-      </ol>
-      <h3>Sudah siap??? </h3>
-      <button id="mulai" onclick="buttonMulaiOP()">mulai</button>
-    </div>
   </div>
 
-  <script src="main.js"></script>
+  <script src="kuis.js"></script>
 </body>
 </html>

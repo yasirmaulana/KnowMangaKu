@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Kuis - DBS</title>
+  <title>Kuis - OP</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,10 +22,10 @@
 <body>
 
   <div class="container-fluid bg-3 text-center">
-    <h3>Dragon Ball Super</h3><br>
+    <h3>One Piece</h3><br>
     <div class="row">
       <div class="col-sm-12">
-          <img src="gambar\dbs.png" style="width:72%" class="img-circle" alt="Cinque Terre">
+          <img src="gambar\op.png" style="width:72%" class="img-circle" alt="Cinque Terre">
       </div>
     </div>
   </div>
@@ -37,13 +37,19 @@
         <li>Jawab pertanyaan dengan pilihan a/b/c/d</li>
         <li>Jawaban 'benar' akan mendapatkan 20 poin</li>
         <li>Jawaban 'salah' akan dikurangi 10 poin</li>
-        <li>Jika score lebih dari atau sama dengan 70, maka bisa mengikuti kuis Level selanjutnya</li>
+        <li>Jika score lebih dari atau sama dengan 80, maka kamu pantas menjadi fans Songoku dan Luffy :P</li>
       </ol>
       <h3>Sudah siap??? </h3>
-      <button id="mulai" onclick="buttonMulaiOP()">mulai</button>
+      <button id="mulai">mulai</button>
     </div>
   </div>
 
-  <script src="main.js"></script>
+  <div id="score">
+  </div>
+
+  <div id="kuis">
+  </div>
+
+  <script src="kuis.js"></script>
 </body>
 </html>

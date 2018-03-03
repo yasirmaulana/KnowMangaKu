@@ -5,11 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!--
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  -->
-
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
@@ -28,6 +23,7 @@
 
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
+      <!--
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
@@ -36,10 +32,11 @@
         </button>
         <a class="navbar-brand" href="#">Know Mangaku</a>
       </div>
+      -->
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li ><a href="#">About</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="" onclick="about()">About</a></li>
         </ul>
         <!--
         <ul class="nav navbar-nav navbar-right">
@@ -61,12 +58,12 @@
     <h3>List of Manga Quiz</h3><br>
     <div class="row">
       <div class="col-sm-6 dbs">
-          <p>Dragon Ball Super - LEVEL 1</p>
-          <a href=""><img src="gambar\dbs.png" class="img-responsive" style="width:100%"></a>
+          <h4>Dragon Ball Super - LEVEL 1</h4>
+          <a href="" onclick="db()"><img src="gambar\dbs.png" class="img-responsive" style="width:100%" alt="Lights"></a>
       </div>
       <div class="col-sm-6 op">
-          <p>One Piece - LEVEL 2</p>
-          <img src="gambar\op.png" class="img-responsive" style="width:100%" alt="Lights">
+          <h4>One Piece - LEVEL 2</h4>
+          <a href="" onclick="op()"><img src="gambar\op.png" class="img-responsive" style="width:100%" alt="Lights"></a>
       </div>
     </div>
   </div>
@@ -76,7 +73,7 @@
   <div id="prolog" class="container-fluid bg-3 text-center"></div>
 
   <footer class="container-fluid text-center">
-    <p>2018 &#9400; yasir</p>
+    <p>2018 &#9400; yasir.maulana</p>
   </footer>
 
   <script src="main.js"></script>
